@@ -1,0 +1,817 @@
+
+2020-07-17 00:33:04,844 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:511]
+2020-07-17 00:35:05,803 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 221, in create_venue_form
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-17 00:35:39,631 ERROR: Exception on /artists/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 414, in create_artist_form
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 03:54:54,580 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 03:55:33,528 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 03:56:48,309 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 03:59:35,843 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:00:50,121 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:03:28,337 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:04:22,979 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:04:47,764 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:04:59,999 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:06:36,940 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:08:30,689 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3280, in configure_mappers
+    mapper._post_configure_properties()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1967, in _post_configure_properties
+    prop.init()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\interfaces.py", line 197, in init
+    self.do_init()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2076, in do_init
+    self._process_dependent_arguments()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2138, in _process_dependent_arguments
+    self.target = self.entity.persist_selectable
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\util\langhelpers.py", line 883, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2058, in entity
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:08:36,070 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3276, in configure_mappers
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Venue->venues'. Original exception was: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:08:38,982 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:08:41,244 ERROR: Exception on /artists [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 360, in artists
+    artists = Artist.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3276, in configure_mappers
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Venue->venues'. Original exception was: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:08:43,906 ERROR: Exception on /shows/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 704, in create_shows
+    form = ShowForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:08:46,916 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3276, in configure_mappers
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Venue->venues'. Original exception was: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:11:23,472 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:11:49,042 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:14:13,731 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:14:25,523 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:16:04,114 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 04:17:02,704 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3280, in configure_mappers
+    mapper._post_configure_properties()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1967, in _post_configure_properties
+    prop.init()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\interfaces.py", line 197, in init
+    self.do_init()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2076, in do_init
+    self._process_dependent_arguments()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2138, in _process_dependent_arguments
+    self.target = self.entity.persist_selectable
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\util\langhelpers.py", line 883, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2058, in entity
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:17:51,202 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:18:23,889 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:18:40,983 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:22:37,184 ERROR: Exception on /artists/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 606, in create_artist_form
+    form = ArtistForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:23:02,900 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:23:06,645 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3276, in configure_mappers
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Venue->venues'. Original exception was: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:23:09,138 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:23:38,664 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:24:45,719 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:25:33,119 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:26:22,202 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:26:25,669 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3276, in configure_mappers
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Venue->venues'. Original exception was: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:26:40,186 ERROR: Exception on /shows/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py", line 704, in create_shows
+    form = ShowForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:29:45,528 INFO: errors [in c:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:742]
+2020-07-19 04:30:07,830 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:32:14,952 ERROR: Exception on /venues [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py", line 117, in venues
+    venues = Venue.query.all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_sqlalchemy\__init__.py", line 512, in __get__
+    mapper = orm.class_mapper(type)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 451, in class_mapper
+    mapper = _inspect_mapped_class(class_, configure=configure)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\base.py", line 430, in _inspect_mapped_class
+    mapper._configure_all()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1354, in _configure_all
+    configure_mappers()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 3280, in configure_mappers
+    mapper._post_configure_properties()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\mapper.py", line 1967, in _post_configure_properties
+    prop.init()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\interfaces.py", line 197, in init
+    self.do_init()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2076, in do_init
+    self._process_dependent_arguments()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2138, in _process_dependent_arguments
+    self.target = self.entity.persist_selectable
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\util\langhelpers.py", line 883, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\sqlalchemy\orm\relationships.py", line 2058, in entity
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: relationship 'show' expects a class or a mapper argument (received: <class 'sqlalchemy.sql.schema.Table'>)
+2020-07-19 04:32:20,710 ERROR: Exception on /venues/create [GET] [in C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py", line 306, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\form.py", line 131, in process
+    field.process(formdata)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\wtforms\csrf\core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\mahmoudabdelfatahabd\Python3\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-07-19 04:33:35,558 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 04:33:46,150 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 04:33:50,699 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 04:34:04,794 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 04:34:21,654 INFO: errors [in c:/Users/mahmoudabdelfatahabd/class-demos/fyyur/app.py:742]
+2020-07-19 05:04:51,756 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:05:03,103 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:05:09,487 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:05:32,364 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:05:37,349 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:06:01,449 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:07:05,337 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:07:36,197 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 05:07:46,746 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:743]
+2020-07-19 18:30:41,353 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:744]
+2020-07-19 18:31:00,381 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:744]
+2020-07-19 20:00:06,221 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:752]
+2020-07-19 20:00:12,686 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:752]
+2020-07-19 20:03:05,344 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:752]
+2020-07-19 20:03:10,197 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:752]
+2020-07-19 20:28:45,382 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:773]
+2020-07-19 20:28:52,674 INFO: errors [in C:\Users\mahmoudabdelfatahabd\class-demos\fyyur\app.py:773]
